@@ -7,7 +7,7 @@ import LoginPage from "./pages/LoginPage";
 import SignupPage from "./pages/SignupPage";
 import ProfilePage from "./pages/ProfilePage";
 import "./App.css";
-import blogData from "./mocks/DummyData.json";
+import { posts } from "./mocks/Posts";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
@@ -19,7 +19,10 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/blogPage" element={<BlogPage />} />
           <Route path="/aboutPage" element={<AboutPage />} />
-          <Route path="/searchPage" element={<SearchPage />} />
+          <Route
+            path="/searchPage"
+            element={<SearchPage placeholder="Search for post" data={posts} />}
+          />
           <Route path="/login" element={<LoginPage />} />
           <Route path="/signup" element={<SignupPage />} />
           <Route path="/profile" element={<ProfilePage />} />

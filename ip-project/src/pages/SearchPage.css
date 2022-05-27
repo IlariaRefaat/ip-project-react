@@ -34,7 +34,8 @@
 
 
 }
-.search-icon{
+
+.search-icon {
     align-self: center;
 }
 
@@ -73,14 +74,19 @@
     color: darkgray;
 
 }
-.data-result{
+
+.data-result {
     text-align: left;
     padding: 20px;
     font-size: larger;
-    width: 60%;
+    width: 50%;
     margin: auto;
 
+
+
+
 }
-.data-item{
+
+.data-item {
     padding: 20px;
 }

@@ -41,8 +41,7 @@ const Navbar = () => {
 
         <div className="login-registration">
           <a href="/login">
-            {" "}
-            <label className="btn btn-secondary" for="login-registration">
+            <label className="btn btn-secondary" htmlFor="login-registration">
               Login/Register
             </label>
           </a>
@@ -60,7 +59,7 @@ const Navbar = () => {
           </h3>
         </div>
         <div className="add-question">
-          <label className="btn btn-primary" for="add-question">
+          <label className="btn btn-primary" htmlFor="add-question">
             Add question
           </label>
         </div>
