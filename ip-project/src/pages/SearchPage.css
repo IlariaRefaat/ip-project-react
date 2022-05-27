@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+:root {
+    --color-dark: #333333;
+    --color-white: #f1f8fb;
+    --color-primary: #aa2200;
+    --color-secondary: #2b6dad;
+    --color-gray: #eeeeee;
+    --border-radius: 2rem;
+    --card-border-radius: 1rem;
+    --btn-padding: 0.6rem 1rem;
+    --search-padding: 0.6rem 1rem;
+    --card-padding: 1rem;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+
+
+}
+
+.search-container {
+    margin: 0 auto;
+    text-align: center;
+
+
+
+}
+.search-icon{
+    align-self: center;
+}
+
+.search-container h4 {
+    margin: 150px 0px 20px 0px;
+    font-size: 30px;
+    color: var(--color-primary);
+}
+
+.searchBar {
+    width: 50%;
+    border: var(--color-dark) solid 2px;
+    border-radius: var(--border-radius);
+    text-align: center;
+    display: inline-flex;
+
+}
+
+.searchBar input[type=text] {
+    width: 95%;
+    background: transparent;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    font-size: larger;
+}
+
+.searchBar i {
+    align-self: center;
+    color: var(--color-primary);
+
+
+}
+
+.searchBar input[type=text]::placeholder {
+    color: darkgray;
+
+}
+.data-result{
+    text-align: left;
+    padding: 20px;
+    font-size: larger;
+    width: 60%;
+    margin: auto;
+
+}
+.data-item{
+    padding: 20px;
+}
