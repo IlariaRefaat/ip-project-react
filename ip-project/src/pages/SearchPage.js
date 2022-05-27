@@ -7,7 +7,13 @@ const SearchPage = ({ placeholder, data }) => {
     const searchWord = event.target.value;
 
     const newFilter = data.filter((value) => {
-      return value.body.toLowerCase().includes(searchWord.toLowerCase());
+      if (
+        value.body.toLowerCase().includes(searchWord.toLowerCase()) ||
+        value.author.name.toLowerCase().includes(searchWord.toLowerCase())
+      ) {
+        return value;
+      }
+      // return value.body.toLowerCase().includes(searchWord.toLowerCase());
     });
 
     if (searchWord === "") {
